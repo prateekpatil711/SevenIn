@@ -1,0 +1,37 @@
+<div class="container-fluid">
+    <div class="ImageSlider">
+        <ng-container *ngFor="let slide of imageSlider; let i = index">
+            <img
+              *ngIf="i === currentSlide"
+              [src]="slide.src"
+              class="slide"
+              [@slideAnimation]="animationType"
+            />
+          </ng-container>
+        
+          <!-- controls -->
+          
+    </div>
+    <div class="dataSlider">
+        <div class="text1">
+            <h1>YOUR IMAGINATION <br><hr> OUR CREATION</h1>
+        </div>
+        <div class="forwardbtn">
+            <button class="control next" (click)="onNextClick()">
+                <img src="../../assets/down-arrow-svgrepo-com-1.svg" class="arrow" alt="">
+            </button>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid Interior">
+    <div class="Category">
+
+    </div>
+    <div class="Category">
+
+    </div>
+    <div class="Category">
+
+    </div>
+</div>

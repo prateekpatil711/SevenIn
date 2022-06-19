@@ -1,0 +1,70 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.topbar{
+    width: 96vw;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    margin: 20px 0px;
+    animation-name: moveInBottom;
+    animation-duration: 0.7s;
+}
+
+.container-fluid{
+    position: relative;
+}
+
+
+
+.navbar-nav{
+    & a{
+        text-align: center;
+        margin: 0px 10px;
+    }
+    & a:hover{
+        color: rgb(226, 255, 255);
+        transform: scale(110%);
+    }
+}
+
+.nav-link{
+    font-size: 18px;
+    color: rgb(229, 229, 229);
+    font-weight: 500;
+    transition: 0.2s ease-in;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+
+.navbar-toggler {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+}
+.navbar-toggler-icon{
+    border: solid white 3px;
+    border-radius: 3px;
+    background-image: url(../assets/TOGGLER.png);
+}
+
+.navbar-brand{
+    padding-left: 40px;
+    font-size: 48px;
+    color: aliceblue;
+    font-family: 'Andika New Basic', sans-serif;
+    text-shadow: 4px 4px 6px #000000;
+}
+
+@keyframes moveInBottom{
+    0%{
+        opacity: 0;
+        transform: translateY(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

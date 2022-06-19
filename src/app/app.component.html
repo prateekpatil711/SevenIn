@@ -1,0 +1,21 @@
+<div class="container-fluid">
+    <router-outlet></router-outlet>
+    <div class="topbar">
+      <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand" href="/home"><b>SevenIn</b></a>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo02">
+          <div class="navbar-nav">
+                <a class="nav-link" routerLinkActive="active" routerLink="/home"><b>Home</b></a>
+                <a class="nav-link" routerLink="/interiors"><b>Interiors</b></a>
+                <a class="nav-link" routerLink="/properties"><b>Properties</b></a>
+                <a class="nav-link" routerLink="/gallary"><b>Gallary</b></a>
+          </div>
+        </div>
+        <div class="menuButton">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+</div>

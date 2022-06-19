@@ -1,0 +1,259 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.projectimg{
+    background-color: rgb(36, 36, 36);
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+
+    &-1{
+        margin: 5px;
+        width: 16vw;
+        height: 75vh;
+        background-image: linear-gradient(to right,rgba(41, 41, 41, 0.600),rgba(41, 41, 41, 0.600)),url(../../assets/A10.png);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        z-index: 2;
+
+        &-1{
+            visibility: hidden;
+            position: absolute;
+            top: 0px;
+            left:0px;
+            background-color: black;
+            width: 32.7vw;
+            height: 75vh;
+        }
+
+        &:hover &-1{
+            visibility: visible;
+            animation-name: moveInLeft;
+            animation-duration: 1s;
+        }
+    }
+    &-2{
+        margin: 5px;
+        width: 16vw;
+        height: 75vh;
+        background-image: linear-gradient(to right,rgba(41, 41, 41, 0.600),rgba(41, 41, 41, 0.600)),url(../../assets/A2.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+
+        &-1{
+            z-index: 1;
+            visibility: hidden;
+            position: absolute;
+            top: 0px;
+            left:0px;
+            background-color: black;
+            width: 32.7vw;
+            height: 75vh;
+        }
+
+        &:hover &-1{
+            visibility: visible;
+            animation-name: moveInLeft;
+            animation-duration: 1s;
+        }
+    }
+    &-3{
+        margin: 5px;
+        width: 16vw;
+        height: 75vh;
+        background-image: linear-gradient(to right,rgba(41, 41, 41, 0.600),rgba(41, 41, 41, 0.600)),url(../../assets/D2.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+
+        &-1{
+            z-index: 1;
+            visibility: hidden;
+            position: absolute;
+            top: 0px;
+            left:-16.7vw;
+            background-color: black;
+            width: 32.7vw;
+            height: 75vh;
+        }
+
+        &:hover &-1{
+            visibility: visible;
+            animation-name: moveInRight;
+            animation-duration: 1s;
+        }
+    }
+    &-4{
+        margin: 5px;
+        width: 16vw;
+        height: 75vh;
+        background-image: linear-gradient(to right,rgba(41, 41, 41, 0.600),rgba(41, 41, 41, 0.600)),url(../../assets/A11.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        z-index: 2;
+        &-1{
+            z-index: 1;
+            visibility: hidden;
+            position: absolute;
+            top: 0px;
+            left:-16.7vw;
+            background-color: black;
+            width: 32.7vw;
+            height: 75vh;
+        }
+
+        &:hover &-1{
+            visibility: visible;
+            animation-name: moveInRight;
+            animation-duration: 1s;
+        }
+    }
+}
+
+.text2{
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    width: 16vw;
+    height: 75vh;
+    & h1{
+        text-align: center;
+    }
+}
+
+@keyframes moveInLeft{
+    
+    0%{
+        opacity: 0;
+        transform: translateX(-200px);
+
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moveInRight{
+    0%{
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 948px){
+    .projectimg{
+        &-1{
+            width: 24vw;
+            height: 60vh;
+            &-1{
+                width: 49vw;
+                height: 60vh;
+            }
+        }
+        &-2{
+            width: 24vw;
+            height: 60vh;
+            &-1{
+                width: 49vw;
+                height: 60vh;
+            }
+        }
+        &-3{
+            width: 24vw;
+            height: 60vh;
+            &-1{
+                width: 49vw;
+                height: 60vh;
+                left: -25vw;
+            }
+        }
+        &-4{
+            width: 24vw;
+            height: 60vh;
+            &-1{
+                width: 49vw;
+                height: 60vh;
+                left: -25vw;
+            }
+        }
+    }
+    .text1{
+        background-color: aliceblue;
+          height: 55vh;
+          text-align: center;
+          transform: rotate(180deg);
+          writing-mode: vertical-rl;
+          color: rgb(255, 255, 255);
+          font-family: 'Akshar', sans-serif;
+          & h1{
+            color: rgb(255, 255, 255);
+            font-size: 1.5vw;
+          }
+      }
+}
+
+@media screen and (max-width: 648px){
+    .projectimg{
+        &-1{
+            width: 22vw;
+            &-1{
+                width: 46.8vw;
+                height: 60vh;
+            }
+        }
+        &-2{
+            width: 22vw;
+            &-1{
+                width: 46.8vw;
+                height: 60vh;
+            }
+        }
+        &-3{
+            width: 22vw;
+            &-1{
+                width: 46.8vw;
+                height: 60vh;
+                left: -24.6vw;
+            }
+        }
+        &-4{
+            width: 22vw;
+            &-1{
+                width: 46.8vw;
+                height: 60vh;
+                left: -24.6vw;
+            }
+        }
+    }
+    .text2{
+        writing-mode: vertical-lr;
+        transform: rotate(180deg);
+        width: 22vw;
+        height: 60vh;
+    }
+
+
+}
